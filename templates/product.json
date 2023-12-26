@@ -115,7 +115,7 @@
           "settings": {
             "heading": "TECHNICAL DOWNLOADS",
             "icon": "check_mark",
-            "row_content": "<ul><li>Click <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\">here<\/a> to view full description of the product.<\/li><\/ul>",
+            "row_content": "",
             "page": "",
             "custom_liquid": "{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
           }
