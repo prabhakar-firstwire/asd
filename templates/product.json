@@ -107,15 +107,6 @@
         "padding_bottom": 52
       }
     },
-    "1c596659-2ce3-42e4-afa8-47f5ca1d4b44": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% for field in product.metafields.custom.digital_downloads %}\n  <div>\n<a href=\"{{ field.url }}\">Anleitung downloaden<\/a><\/div>\n{% endfor %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "1d5192d6-ef84-49a6-a319-4879bf44d98b": {
       "type": "collapsible-content",
       "blocks": {
@@ -179,7 +170,6 @@
   "order": [
     "main",
     "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a",
-    "1c596659-2ce3-42e4-afa8-47f5ca1d4b44",
     "1d5192d6-ef84-49a6-a319-4879bf44d98b",
     "related-products"
   ]
