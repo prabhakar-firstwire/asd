@@ -40,6 +40,7 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {
           }
         },
@@ -51,10 +52,21 @@
         },
         "41dd682a-ef3f-4833-9282-e82c7ffc3d14": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "3d downloads",
             "icon": "check_mark",
             "content": "<ul><li>Click <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\">here<\/a> to view full description of the product.<\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "d13d2285-2aa5-4153-b737-fb53b7f75e16": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
             "page": ""
           }
         }
@@ -68,7 +80,8 @@
         "buy_buttons",
         "description",
         "share",
-        "41dd682a-ef3f-4833-9282-e82c7ffc3d14"
+        "41dd682a-ef3f-4833-9282-e82c7ffc3d14",
+        "d13d2285-2aa5-4153-b737-fb53b7f75e16"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -83,6 +96,46 @@
         "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 12
+      }
+    },
+    "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h1>Description:<\/h1>\n{{product.description}}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1d5192d6-ef84-49a6-a319-4879bf44d98b": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--14574477869105__1d5192d6-ef84-49a6-a319-4879bf44d98b-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14574477869105__1d5192d6-ef84-49a6-a319-4879bf44d98b-collapsible_row-4"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Collapsible content",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "related-products": {
@@ -106,6 +159,8 @@
   },
   "order": [
     "main",
+    "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a",
+    "1d5192d6-ef84-49a6-a319-4879bf44d98b",
     "related-products"
   ]
 }
