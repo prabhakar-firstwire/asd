@@ -110,7 +110,7 @@
     "1c596659-2ce3-42e4-afa8-47f5ca1d4b44": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div>\n<a href=\"{{product.custom.digital_downloads | file_url}}\">TECHNICAL DOWNLOADS<\/a>\n<\/div>",
+        "custom_liquid": "<div>\n<a href=\"{{product.metafields.custom.digital_downloads | file_url}}\">TECHNICAL DOWNLOADS<\/a>\n<\/div>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
