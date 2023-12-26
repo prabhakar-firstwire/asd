@@ -96,6 +96,7 @@
                   >
                     {{ block.settings.row_content }}
                     {{ block.settings.page.content }}
+                    {{ section.settings.custom_liquid }}
                   </div>
                 </details>
               </div>
@@ -482,7 +483,13 @@
           "type": "page",
           "id": "page",
           "label": "t:sections.collapsible_content.blocks.collapsible_row.settings.page.label"
-        }
+        },
+        {
+      "type": "liquid",
+      "id": "custom_liquid",
+      "label": "t:sections.custom-liquid.settings.custom_liquid.label",
+      "info": "t:sections.custom-liquid.settings.custom_liquid.info"
+    }
       ]
     }
   ],
