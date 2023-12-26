@@ -98,11 +98,20 @@
         "padding_bottom": 12
       }
     },
+    "8912be0b-3a94-4f60-b109-1953438a884b": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h1><CENTER><U>DESCRIPTION<\/CENTER><\/U><\/h1>\n{{product.description}}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a": {
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "<h1><CENTER><U>DESCRIPTION<\/CENTER><\/U><\/h1>\n{{product.description}}\n\n<h1><CENTER><U>DOWNLOADS<\/CENTER><\/U><\/h1>\n\n<button class=\"collapsible\">Click to expand<\/button>\n<div class=\"content\">\n  <p>Hidden content goes here<\/p>\n{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}\n<\/div>\n\n\n<style>\n.collapsible {\n  background-color: #777;\n  color: white;\n  cursor: pointer;\n  padding: 18px;\n  width: 100%;\n  border: none;\n  text-align: left;\n  outline: none;\n  font-size: 15px;\n}\n\n.content {\n  display: none;\n  padding: 0 18px;\n  overflow: hidden;\n  background-color: #f1f1f1;\n}\n<\/style>",
+        "custom_liquid": "<h1><CENTER><U>DOWNLOADS<\/CENTER><\/U><\/h1>\n\n<button class=\"collapsible\">Click to expand<\/button>\n<div class=\"content\">\n  <p>Hidden content goes here<\/p>\n{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}\n<\/div>\n\n\n<style>\n.collapsible {\n  background-color: #777;\n  color: white;\n  cursor: pointer;\n  padding: 18px;\n  width: 100%;\n  border: none;\n  text-align: left;\n  outline: none;\n  font-size: 15px;\n}\n\n.content {\n  display: none;\n  padding: 0 18px;\n  overflow: hidden;\n  background-color: #f1f1f1;\n}\n<\/style>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
@@ -172,6 +181,7 @@
   },
   "order": [
     "main",
+    "8912be0b-3a94-4f60-b109-1953438a884b",
     "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a",
     "1d5192d6-ef84-49a6-a319-4879bf44d98b",
     "related-products"
