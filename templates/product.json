@@ -101,7 +101,7 @@
     "8912be0b-3a94-4f60-b109-1953438a884b": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h1><CENTER><U>DESCRIPTION<\/CENTER><\/U><\/h1>\n{{product.description}}",
+        "custom_liquid": "<h1><CENTER><U>DESCRIPTION<\/CENTER><\/U><\/h1>\n<\/p class=\"description\">{{product.description}}<\/p>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
