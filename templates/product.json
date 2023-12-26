@@ -101,7 +101,7 @@
     "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<h1><CENTER><U>DESCRIPTION<\/CENTER><\/U><\/h1>\n{{product.description}}\n\n<h1><CENTER><U>DOWNLOADS<\/CENTER><\/U><\/h1>\n<DIV><center\/>\n{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a href=\"{{ field.url }}\">Download Instructions<\/a><\/div>\n  {% endfor %}\n<\/DIV>",
+        "custom_liquid": "<h1><CENTER><U>DESCRIPTION<\/CENTER><\/U><\/h1>\n{{product.description}}\n\n<h1><CENTER><U>DOWNLOADS<\/CENTER><\/U><\/h1>\n<DIV><center\/>\n{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}\n<\/DIV>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
