@@ -127,7 +127,7 @@
             "icon": "check_mark",
             "row_content": "",
             "page": "",
-            "custom_liquid": "{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
+            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
           }
         },
         "31c614c9-0979-4761-ad50-4ca7263bf6e5": {
