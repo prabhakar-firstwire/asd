@@ -1,0 +1,189 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "dropdown"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "41dd682a-ef3f-4833-9282-e82c7ffc3d14": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "3d downloads",
+            "icon": "check_mark",
+            "content": "<ul><li>Click <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\">here<\/a> to view full description of the product.<\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><\/ul>",
+            "page": ""
+          }
+        },
+        "d13d2285-2aa5-4153-b737-fb53b7f75e16": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share",
+        "41dd682a-ef3f-4833-9282-e82c7ffc3d14",
+        "d13d2285-2aa5-4153-b737-fb53b7f75e16"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "media_size": "small",
+        "constrain_to_viewport": false,
+        "media_fit": "cover",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": true,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "8912be0b-3a94-4f60-b109-1953438a884b": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h1><CENTER><U>DESCRIPTION<\/CENTER><\/U><\/h1>\n<\/p class=\"description\">{{product.description}}<\/p>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "<h1><CENTER><U>DOWNLOADS<\/CENTER><\/U><\/h1>\n\n<button class=\"collapsible\">Click to expand<\/button>\n<div class=\"content\">\n  <p>Hidden content goes here<\/p>\n{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}\n<\/div>\n\n\n<style>\n.collapsible {\n  background-color: #777;\n  color: white;\n  cursor: pointer;\n  padding: 18px;\n  width: 100%;\n  border: none;\n  text-align: left;\n  outline: none;\n  font-size: 15px;\n}\n\n.content {\n  display: none;\n  padding: 0 18px;\n  overflow: hidden;\n  background-color: #f1f1f1;\n}\n<\/style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "1d5192d6-ef84-49a6-a319-4879bf44d98b": {
+      "type": "collapsible-content",
+      "blocks": {
+        "template--14574477869105__1d5192d6-ef84-49a6-a319-4879bf44d98b-collapsible_row-4": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "TECHNICAL DOWNLOADS",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "",
+            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
+          }
+        },
+        "31c614c9-0979-4761-ad50-4ca7263bf6e5": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "3D DRAWING: BIM",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "",
+            "custom_liquid": "{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
+          }
+        }
+      },
+      "block_order": [
+        "template--14574477869105__1d5192d6-ef84-49a6-a319-4879bf44d98b-collapsible_row-4",
+        "31c614c9-0979-4761-ad50-4ca7263bf6e5"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Downloads",
+        "heading_size": "h0",
+        "heading_alignment": "center",
+        "layout": "row",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "You may also like",
+        "heading_size": "h2",
+        "products_to_show": 10,
+        "columns_desktop": 4,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "8912be0b-3a94-4f60-b109-1953438a884b",
+    "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a",
+    "1d5192d6-ef84-49a6-a319-4879bf44d98b",
+    "related-products"
+  ]
+}
