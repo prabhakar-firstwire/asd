@@ -62,12 +62,17 @@
         },
         "d13d2285-2aa5-4153-b737-fb53b7f75e16": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Collapsible row",
             "icon": "check_mark",
             "content": "",
             "page": ""
+          }
+        },
+        "6ad4a7df-cfb4-4c63-878a-3163ebc032f8": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
           }
         }
       },
@@ -81,7 +86,8 @@
         "description",
         "share",
         "41dd682a-ef3f-4833-9282-e82c7ffc3d14",
-        "d13d2285-2aa5-4153-b737-fb53b7f75e16"
+        "d13d2285-2aa5-4153-b737-fb53b7f75e16",
+        "6ad4a7df-cfb4-4c63-878a-3163ebc032f8"
       ],
       "settings": {
         "enable_sticky_info": true,
