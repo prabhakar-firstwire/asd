@@ -72,7 +72,7 @@
         "6ad4a7df-cfb4-4c63-878a-3163ebc032f8": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
+            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download {{field.text}}<\/a><\/div>\n  {% endfor %}"
           }
         }
       },
