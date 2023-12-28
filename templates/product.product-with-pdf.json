@@ -64,6 +64,12 @@
           "settings": {
             "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download {{field.text}}<\/a><\/div>\n  {% endfor %}"
           }
+        },
+        "523128ca-33a2-4011-8494-1c7b7eba7b6e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">{{ field.text }}<\/a><\/div>\n{% endfor %}"
+          }
         }
       },
       "block_order": [
@@ -76,7 +82,8 @@
         "description",
         "share",
         "41dd682a-ef3f-4833-9282-e82c7ffc3d14",
-        "6ad4a7df-cfb4-4c63-878a-3163ebc032f8"
+        "6ad4a7df-cfb4-4c63-878a-3163ebc032f8",
+        "523128ca-33a2-4011-8494-1c7b7eba7b6e"
       ],
       "settings": {
         "enable_sticky_info": true,
