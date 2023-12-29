@@ -60,14 +60,16 @@
             "page": ""
           }
         },
-        "d13d2285-2aa5-4153-b737-fb53b7f75e16": {
-          "type": "collapsible_tab",
-          "disabled": true,
+        "6ad4a7df-cfb4-4c63-878a-3163ebc032f8": {
+          "type": "custom_liquid",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "",
-            "page": ""
+            "custom_liquid": "{% assign file = product.metafields.custom.technical_downloads.value %}\n\n{% for field in file %}\n{% assign file_output = file %}\n{% assign file_url = field.url %}\n{% assign file_name_with_shopify_extension = file_url | split: '\/' | last %} <!-- parse the file name from the URL -->\n{% assign file_name = file_name_with_shopify_extension | split: '?' | first %} <!-- strip off the ?v=123456789 part of the file name -->\n<div><strong>Download:<\/strong> <a href=\"{{ field.url }}\" target=\"new\">{{ file_name }}<\/a><\/div>\n{% endfor %}"
+          }
+        },
+        "523128ca-33a2-4011-8494-1c7b7eba7b6e": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">{{ field.text }}<\/a><\/div>\n{% endfor %}"
           }
         }
       },
@@ -81,7 +83,8 @@
         "description",
         "share",
         "41dd682a-ef3f-4833-9282-e82c7ffc3d14",
-        "d13d2285-2aa5-4153-b737-fb53b7f75e16"
+        "6ad4a7df-cfb4-4c63-878a-3163ebc032f8",
+        "523128ca-33a2-4011-8494-1c7b7eba7b6e"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -127,7 +130,7 @@
             "icon": "check_mark",
             "row_content": "",
             "page": "",
-            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
+            "custom_liquid": "{% assign file = product.metafields.custom.technical_downloads.value %}\n\n{% for field in file %}\n{% assign file_output = file %}\n{% assign file_url = field.url %}\n{% assign file_name_with_shopify_extension = file_url | split: '\/' | last %} <!-- parse the file name from the URL -->\n{% assign file_name = file_name_with_shopify_extension | split: '?' | first %} <!-- strip off the ?v=123456789 part of the file name -->\n<div><strong>Download:<\/strong> <a href=\"{{ field.url }}\" target=\"new\">{{ file_name }}<\/a><\/div>\n{% endfor %}"
           }
         },
         "31c614c9-0979-4761-ad50-4ca7263bf6e5": {
@@ -145,6 +148,7 @@
         "template--14574477869105__1d5192d6-ef84-49a6-a319-4879bf44d98b-collapsible_row-4",
         "31c614c9-0979-4761-ad50-4ca7263bf6e5"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Downloads",
@@ -160,15 +164,25 @@
         "padding_bottom": 36
       }
     },
+    "ba8f4726-63cb-46dc-b49d-595fae1aa587": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% assign file = product.metafields.custom.digital_downloads.value %}\n\n{% for field in file %}\n{% assign file_output = file %}\n{% assign file_url = field.url %}\n{% assign file_name_with_shopify_extension = file_url | split: '\/' | last %} <!-- parse the file name from the URL -->\n{% assign file_name = file_name_with_shopify_extension | split: '?' | first %} <!-- strip off the ?v=123456789 part of the file name -->\n<div><strong>Download:<\/strong> <a href=\"{{ field.url }}\" target=\"new\">{{ file_name }}<\/a><\/div>\n{% endfor %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
+        "heading": "<strong>Related Accessories<\/strong>",
+        "heading_size": "h1",
         "products_to_show": 10,
-        "columns_desktop": 4,
+        "columns_desktop": 5,
         "color_scheme": "background-1",
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "image_shape": "default",
         "show_secondary_image": true,
         "show_vendor": false,
@@ -177,15 +191,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "be0cac57-dce0-41dd-82d2-c2489778be59": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% assign pdfFiles = product.metafields.pdf_files %}\n{% if pdfFiles %}\n  <h3>PDF Downloads<\/h3>\n  <ul>\n    {% for pdf in pdfFiles %}\n      <li><a href=\"{{ pdf.url }}\">{{ pdf.name }}<\/a><\/li>\n    {% endfor %}\n  <\/ul>\n{% endif %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -193,7 +198,7 @@
     "8912be0b-3a94-4f60-b109-1953438a884b",
     "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a",
     "1d5192d6-ef84-49a6-a319-4879bf44d98b",
-    "related-products",
-    "be0cac57-dce0-41dd-82d2-c2489778be59"
+    "ba8f4726-63cb-46dc-b49d-595fae1aa587",
+    "related-products"
   ]
 }
