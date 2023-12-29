@@ -167,8 +167,8 @@
     "related-products": {
       "type": "related-products",
       "settings": {
-        "heading": "You may also like",
-        "heading_size": "h2",
+        "heading": "<strong>Related Accessories<\/strong>",
+        "heading_size": "h1",
         "products_to_show": 10,
         "columns_desktop": 5,
         "color_scheme": "background-1",
