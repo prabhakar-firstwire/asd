@@ -184,7 +184,7 @@
     "ba8f4726-63cb-46dc-b49d-595fae1aa587": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "{% assign pdfFiles = product.metafields.pdf_files %}\n{% if pdfFiles %}\n  <h3>PDF Downloads<\/h3>\n  <ul>\n    {% for pdf in pdfFiles %}\n      <li><a href=\"{{ pdf.url }}\">{{ pdf.name }}<\/a><\/li>\n    {% endfor %}\n  <\/ul>\n{% endif %}",
+        "custom_liquid": "",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
