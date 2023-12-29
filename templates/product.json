@@ -186,6 +186,15 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "9230746f-3403-4ca6-9e36-7e3d0627d5ee": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"downloadable-file-wrapper\">\n {%assign custom_files = product.metafields.custom.technical_downloads.value %}\n  {%if custom_files.size > 0 %}  \n   <h3>Downloadable links<\/h3>\n     <ul>\n       {% for file in custom_files %}\n        {% assign file_key = file | first %}\n        {% assign file_link = file | last %}\n       <li class=\"downloadable-file-item\"><span>{{file_key}}: <\/span><a href=\"{{file_link}}\" target=\"_blank\"><span class=\"downloadable-file-value\"><\/span><\/a> <\/li>\n       {% endfor %}\n     <\/ul>\n  {%endif%}\n  <\/div>\n <br\/>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -194,6 +203,7 @@
     "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a",
     "1d5192d6-ef84-49a6-a319-4879bf44d98b",
     "related-products",
-    "be0cac57-dce0-41dd-82d2-c2489778be59"
+    "be0cac57-dce0-41dd-82d2-c2489778be59",
+    "9230746f-3403-4ca6-9e36-7e3d0627d5ee"
   ]
 }
