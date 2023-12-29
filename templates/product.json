@@ -56,7 +56,8 @@
             "heading": "3d downloads",
             "icon": "check_mark",
             "content": "<ul><li>Click <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\">here<\/a> to view full description of the product.<\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><\/ul>",
-            "page": ""
+            "page": "",
+            "custom_liquid": ""
           }
         },
         "d13d2285-2aa5-4153-b737-fb53b7f75e16": {
@@ -66,7 +67,8 @@
             "heading": "Collapsible row",
             "icon": "check_mark",
             "content": "",
-            "page": ""
+            "page": "",
+            "custom_liquid": "{% assign file = product.metafields.custom.product-files %}\n\n{% for field in file %}\n{% assign file_output = file %}\n{% assign file_url = field.url %}\n{% assign file_name_with_shopify_extension = file_url | split: '\/' | last %} <!-- parse the file name from the URL -->\n{% assign file_name = file_name_with_shopify_extension | split: '?' | first %} <!-- strip off the ?v=123456789 part of the file name -->\n<div><strong>Download:<\/strong> <a href=\"{{ field.url }}\" target=\"new\">{{ file_name }}<\/a><\/div>\n{% endfor %}"
           }
         }
       },
