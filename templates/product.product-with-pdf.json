@@ -52,6 +52,7 @@
         },
         "41dd682a-ef3f-4833-9282-e82c7ffc3d14": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "3d downloads",
             "icon": "check_mark",
@@ -62,7 +63,7 @@
         "6ad4a7df-cfb4-4c63-878a-3163ebc032f8": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download {{field.text}}<\/a><\/div>\n  {% endfor %}"
+            "custom_liquid": "{% assign file = product.metafields.custom.technical_downloads.value %}\n\n{% for field in file %}\n{% assign file_output = file %}\n{% assign file_url = field.url %}\n{% assign file_name_with_shopify_extension = file_url | split: '\/' | last %} <!-- parse the file name from the URL -->\n{% assign file_name = file_name_with_shopify_extension | split: '?' | first %} <!-- strip off the ?v=123456789 part of the file name -->\n<div><strong>Download:<\/strong> <a href=\"{{ field.url }}\" target=\"new\">{{ file_name }}<\/a><\/div>\n{% endfor %}"
           }
         },
         "523128ca-33a2-4011-8494-1c7b7eba7b6e": {
