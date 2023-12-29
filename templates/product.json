@@ -146,7 +146,7 @@
             "icon": "check_mark",
             "row_content": "",
             "page": "",
-            "custom_liquid": ""
+            "custom_liquid": "{% assign file = product.metafields.custom.technical_downloads.value %}\n\n{% for field in file %}\n{% assign file_output = file %}\n{% assign file_url = field.url %}\n{% assign file_name_with_shopify_extension = file_url | split: '\/' | last %} <!-- parse the file name from the URL -->\n{% assign file_name = file_name_with_shopify_extension | split: '?' | first %} <!-- strip off the ?v=123456789 part of the file name -->\n<div><strong>Download:<\/strong> <a href=\"{{ field.url }}\" target=\"new\">{{ file_name }}<\/a><\/div>\n{% endfor %}"
           }
         }
       },
