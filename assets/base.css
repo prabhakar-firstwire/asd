@@ -3511,3 +3511,28 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+
+
+// ***************************** Custom downloadable files ****************************************//
+
+.downloadable-file-item {
+  clear: both;
+  display: block;
+  widht:32px;
+  height:32px;
+}
+
+.downloadable-file-item + .downloadable-file-item{
+  margin-top: 30px;
+}
+
+.downloadable-file-value {
+  display: block;
+  widht:32px;
+  height:32px;
+  background-image: url('https://cdn.shopify.com/s/files/1/0328/5057/5497/t/1/assets/pdf2.png'); // URL of the PDF icon displayed at the product page. Feel free to use any other icon.
+  background-repeat: no-repeat;
+}
+
+// ***************************** Custom downloadable files ****************************************//
