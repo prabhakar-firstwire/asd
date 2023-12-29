@@ -164,6 +164,16 @@
         "padding_bottom": 36
       }
     },
+    "ba8f4726-63cb-46dc-b49d-595fae1aa587": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "{% assign file = product.metafields.custom.digital_downloads.value %}\n\n{% for field in file %}\n{% assign file_output = file %}\n{% assign file_url = field.url %}\n{% assign file_name_with_shopify_extension = file_url | split: '\/' | last %} <!-- parse the file name from the URL -->\n{% assign file_name = file_name_with_shopify_extension | split: '?' | first %} <!-- strip off the ?v=123456789 part of the file name -->\n<div><strong>Download:<\/strong> <a href=\"{{ field.url }}\" target=\"new\">{{ file_name }}<\/a><\/div>\n{% endfor %}",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -181,15 +191,6 @@
         "padding_top": 36,
         "padding_bottom": 28
       }
-    },
-    "ba8f4726-63cb-46dc-b49d-595fae1aa587": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "{% assign file = product.metafields.custom.digital_downloads.value %}\n\n{% for field in file %}\n{% assign file_output = file %}\n{% assign file_url = field.url %}\n{% assign file_name_with_shopify_extension = file_url | split: '\/' | last %} <!-- parse the file name from the URL -->\n{% assign file_name = file_name_with_shopify_extension | split: '?' | first %} <!-- strip off the ?v=123456789 part of the file name -->\n<div><strong>Download:<\/strong> <a href=\"{{ field.url }}\" target=\"new\">{{ file_name }}<\/a><\/div>\n{% endfor %}",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -197,7 +198,7 @@
     "8912be0b-3a94-4f60-b109-1953438a884b",
     "c335ccb6-fba3-42b3-be4f-46ffb57e3a8a",
     "1d5192d6-ef84-49a6-a319-4879bf44d98b",
-    "related-products",
-    "ba8f4726-63cb-46dc-b49d-595fae1aa587"
+    "ba8f4726-63cb-46dc-b49d-595fae1aa587",
+    "related-products"
   ]
 }
