@@ -138,11 +138,22 @@
             "page": "",
             "custom_liquid": "{% for field in product.metafields.custom.digital_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
           }
+        },
+        "91e346f5-0888-4382-814c-3bd808de35c6": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "CONFIGURATION",
+            "icon": "check_mark",
+            "row_content": "",
+            "page": "",
+            "custom_liquid": ""
+          }
         }
       },
       "block_order": [
         "template--14574477869105__1d5192d6-ef84-49a6-a319-4879bf44d98b-collapsible_row-4",
-        "31c614c9-0979-4761-ad50-4ca7263bf6e5"
+        "31c614c9-0979-4761-ad50-4ca7263bf6e5",
+        "91e346f5-0888-4382-814c-3bd808de35c6"
       ],
       "settings": {
         "caption": "",
