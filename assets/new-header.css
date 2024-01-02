@@ -43,4 +43,17 @@
       margin: 10px 0;
     }
   }
-  
+.logo1{
+    width: 33%;
+    height: 100%;
+    padding: 20px;  
+    float: left;
+    position: relative;
+}  
+.icons{
+    width: 33%;
+    height: 100%;
+    padding: 20px;  
+    float: right;
+    position: relative;
+}  
