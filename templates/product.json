@@ -128,7 +128,7 @@
             "icon": "check_mark",
             "row_content": "",
             "page": "",
-            "custom_liquid": "{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}"
+            "custom_liquid": "{% case product.type %}\n  {% when 'wk_wallet' %}\n{% for field in product.metafields.custom.technical_downloads.value %}\n    <div><a target=\"_blank\" href=\"{{ field.url }}\">Download <\/a><\/div>\n  {% endfor %}\n{% endcase %}"
           }
         },
         "31c614c9-0979-4761-ad50-4ca7263bf6e5": {
