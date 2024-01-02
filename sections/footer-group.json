@@ -16,6 +16,7 @@
       "block_order": [
         "dcdcd463-6f15-4c14-8f1b-a883cc5afa36"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "background-1",
         "newsletter_enable": true,

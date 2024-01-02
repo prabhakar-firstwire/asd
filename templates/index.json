@@ -42,6 +42,7 @@
         "template--14574477901873__25c3ce22-eaa7-40e9-b651-98e95fe0d1d4-slide-1",
         "template--14574477901873__25c3ce22-eaa7-40e9-b651-98e95fe0d1d4-slide-2"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -55,6 +56,7 @@
     },
     "featured_collection": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Featured products",
         "heading_size": "h2",
