@@ -2,14 +2,18 @@
 <header class="new-header">
   <div class="container">
     <nav class="new-header__nav">
-        <div class="new-header__nav">logo</div>
+        <div class="logo1">logo</div>
       <ul class="new-header__menu">
         {% for link in linklists.main-menu.links -%}
-            <li class="new-header__menu-item">{{ link.title | link_to: link.url }}
+            <li>{{ link.title | link_to: link.url }}
                 </li>
           {%- endfor %}
       </ul>
-      <div class="new-header__menu-item">icons</div>
+      <div class="icons">icons</div>
+      {% for link in linklists.main-menu.links %}
+        <!-- menu content -->
+      {% endfor %}
+      
     </nav>
   </div>
 </header>
@@ -18,17 +22,6 @@
     {
       "name": "New Header",
       "settings": [],
-{
-    "type":"image_picker",
-    "id":"logo",
-    "label":"select logo"
-},
-{
-    "type":"link_lists",
-    "id"   :"menu",
-    "label":"select menu"
-}
-
       "presets": [
         {
           "name": "New Header",
