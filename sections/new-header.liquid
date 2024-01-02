@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="{{ 'new-header.css' | asset_url }}" media="print" onload="this.media='all'">
+<header class="new-header">
+  <div class="container">
+    <nav class="new-header__nav">
+        <div class="logo1">logo</div>
+      <ul class="new-header__menu">
+        {% for link in linklists.main-menu.links -%}
+            <li>{{ link.title | link_to: link.url }}
+                </li>
+          {%- endfor %}
+        {% comment %} <li class="new-header__menu-item"><a href="#">Home</a></li>
+        <li class="new-header__menu-item"><a href="#">Shop</a></li>
+        <li class="new-header__menu-item"><a href="#">About</a></li>
+        <li class="new-header__menu-item"><a href="#">Contact</a></li> {% endcomment %}
+      </ul>
+      <div class="icons">icons</div>
+      {% for link in linklists.main-menu.links %}
+        <!-- menu content -->
+      {% endfor %}
+      
+    </nav>
+  </div>
+</header>
+
+{% schema %}
+    {
+      "name": "New Header",
+      "settings": [],
+      "presets": [
+        {
+          "name": "New Header",
+          "category": "Header"
+        }
+      ]
+    }
+    {% endschema %}
+    
