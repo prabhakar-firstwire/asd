@@ -57,7 +57,8 @@
             "heading": "3d downloads",
             "icon": "check_mark",
             "content": "<ul><li>Click <a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/500-KB.pdf?v=1703571252\">here<\/a> to view full description of the product.<\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><li><a href=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\" target=\"_blank\" title=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0554\/5328\/6449\/files\/1-MB.pdf?v=1703571255\">More destails<\/a><\/li><\/ul>",
-            "page": ""
+            "page": "",
+            "custom_liquid": ""
           }
         },
         "6ad4a7df-cfb4-4c63-878a-3163ebc032f8": {
@@ -148,7 +149,6 @@
         "template--14574477869105__1d5192d6-ef84-49a6-a319-4879bf44d98b-collapsible_row-4",
         "31c614c9-0979-4761-ad50-4ca7263bf6e5"
       ],
-      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Downloads",
