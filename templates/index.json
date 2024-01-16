@@ -82,10 +82,17 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "featured_collection_custom_fAQyrT": {
+      "type": "Featured-collection-custom",
+      "settings": {
+        "featured_collection": "smart-phones"
+      }
     }
   },
   "order": [
     "25c3ce22-eaa7-40e9-b651-98e95fe0d1d4",
-    "featured_collection"
+    "featured_collection",
+    "featured_collection_custom_fAQyrT"
   ]
 }
