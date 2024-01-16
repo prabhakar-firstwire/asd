@@ -69,10 +69,42 @@
             "question": "qwertyu",
             "answer": "<p>asdfgh<\/p>"
           }
+        },
+        "faq_3EBmfn": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "faq_7PGp7N": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "faq_dxbe8n": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
+        },
+        "faq_cMFCfM": {
+          "type": "faq",
+          "settings": {
+            "question": "",
+            "answer": ""
+          }
         }
       },
       "block_order": [
-        "faq_pzKHTd"
+        "faq_pzKHTd",
+        "faq_3EBmfn",
+        "faq_7PGp7N",
+        "faq_dxbe8n",
+        "faq_cMFCfM"
       ],
       "settings": {
         "faq_title": "faq geesrdgjhkjk;lhkjgh",
