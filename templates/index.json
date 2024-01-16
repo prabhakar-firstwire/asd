@@ -62,6 +62,18 @@
     },
     "faq_MYhkTC": {
       "type": "FAQ",
+      "blocks": {
+        "faq_pzKHTd": {
+          "type": "faq",
+          "settings": {
+            "question": "qwertyu",
+            "answer": "<p>asdfgh<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_pzKHTd"
+      ],
       "settings": {
         "faq_title": "faq geesrdgjhkjk;lhkjgh",
         "show_search": false,
