@@ -94,3 +94,13 @@
     {% endfor %}
   </div>
 </div>
+<script>
+  $(document).ready(function() {
+    $('.faq-item .faq-answer').hide(); // Hide all answers by default
+
+    $('.faq-question').click(function() {
+      $(this).next('.faq-answer').slideToggle();
+      $('.faq-answer').not($(this).next('.faq-answer')).slideUp(); // Close other answers
+    });
+  });
+</script>
