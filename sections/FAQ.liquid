@@ -1,4 +1,4 @@
-<style>
+{% comment %} <style>
   /* FAQ Section Styles */
 .faq-section {
   padding: 20px;
@@ -97,6 +97,94 @@
 <script>
   $(document).ready(function() {
     $('.faq-item .faq-answer').hide(); // Hide all answers by default
+
+    $('.faq-question').click(function() {
+      $(this).next('.faq-answer').slideToggle();
+      $('.faq-answer').not($(this).next('.faq-answer')).slideUp(); // Close other answers
+    });
+  });
+</script> {% endcomment %}
+
+{% schema %}
+{
+  "name": "FAQ Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "faq_title",
+      "label": "FAQ Section Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search",
+      "label": "Show Search Bar"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Number of Columns",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 Column"
+        },
+        {
+          "value": "2",
+          "label": "2 Columns"
+        },
+        {
+          "value": "3",
+          "label": "3 Columns"
+        }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+      {
+        "name": "FAQ ",
+        "category": "Collection"
+      }
+    ]
+}
+{% endschema %}
+
+<div class="faq-section">
+  <h2>{{ section.settings.faq_title }}</h2>
+  {% if section.settings.show_search %}
+    <!-- Render search bar -->
+  {% endif %}
+
+  <div class="faq-columns-{{ section.settings.columns }}">
+    {% for block in section.blocks %}
+      <div class="faq-item">
+        <h3 class="faq-question">{{ block.settings.question }}</h3>
+        <div class="faq-answer">{{ block.settings.answer }}</div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    $('.faq-answer').hide(); // Hide all answers by default
 
     $('.faq-question').click(function() {
       $(this).next('.faq-answer').slideToggle();
