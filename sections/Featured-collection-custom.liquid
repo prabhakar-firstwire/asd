@@ -1,12 +1,88 @@
+<style>
+  /* featured-collection.liquid */
+.featured-collection {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.featured-collection h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.product {
+  display: inline-block;
+  margin: 0 10px;
+  text-align: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.add-to-cart-btn {
+  padding: 10px 20px;
+  background-color: #FFD700;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #FFA500;
+}
+
+</style>
+
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "Featured Collection",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "featured_collection",
+      "label": "Select a Collection"
+    }
+  ]
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+<div class="featured-collection">
+  <h2>Featured Collection</h2>
+  {% for product in section.settings.featured_collection.products %}
+    <div class="product" data-id="{{ product.id }}" data-inventory="{{ product.available }}">
+      <img src="{{ product.featured_image | product_img_url: 'medium' }}" alt="{{ product.title }}">
+      <p>{{ product.title }}</p>
+      <button class="add-to-cart-btn">ADD TO CART</button>
+    </div>
+  {% endfor %}
+</div>
+<script>
+  $(document).ready(function() {
+  $('.add-to-cart-btn').on('click', function() {
+    var $product = $(this).closest('.product');
+    var inventory = $product.data('inventory');
+    
+    if (inventory > 0) {
+      // Simulate AJAX request to add product to cart
+      setTimeout(function() {
+        // Change button label to "THANK YOU!"
+        $product.find('.add-to-cart-btn').text('THANK YOU!');
+      }, 500);
+    } else {
+      // Change button label to "ERROR"
+      $product.find('.add-to-cart-btn').text('ERROR');
+    }
+  });
+});
 
-{% javascript %}
-{% endjavascript %}
+</script>
