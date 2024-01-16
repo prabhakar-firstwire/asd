@@ -54,45 +54,24 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "featured_collection": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "smart-phones",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
-      }
-    },
     "featured_collection_custom_fAQyrT": {
       "type": "Featured-collection-custom",
       "settings": {
         "featured_collection": "smart-phones"
       }
+    },
+    "faq_MYhkTC": {
+      "type": "FAQ",
+      "settings": {
+        "faq_title": "faq geesrdgjhkjk;lhkjgh",
+        "show_search": false,
+        "columns": "1"
+      }
     }
   },
   "order": [
     "25c3ce22-eaa7-40e9-b651-98e95fe0d1d4",
-    "featured_collection",
-    "featured_collection_custom_fAQyrT"
+    "featured_collection_custom_fAQyrT",
+    "faq_MYhkTC"
   ]
 }
