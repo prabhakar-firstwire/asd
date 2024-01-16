@@ -1,12 +1,58 @@
 {% schema %}
-  {
-    "name": "Section name",
-    "settings": []
-  }
+{
+  "name": "FAQ Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "faq_title",
+      "label": "FAQ Section Title"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_search",
+      "label": "Show Search Bar"
+    },
+    {
+      "type": "select",
+      "id": "columns",
+      "label": "Number of Columns",
+      "options": [
+        {
+          "value": "1",
+          "label": "1 Column"
+        },
+        {
+          "value": "2",
+          "label": "2 Columns"
+        },
+        {
+          "value": "3",
+          "label": "3 Columns"
+        }
+      ]
+    }
+  ],
+  "presets": [
+      {
+        "name": "FAQ ",
+        "category": "Collection"
+      }
+    ]
+}
 {% endschema %}
 
-{% stylesheet %}
-{% endstylesheet %}
+<div class="faq-section">
+  <h2>{{ section.settings.faq_title }}</h2>
+  {% if section.settings.show_search %}
+    <!-- Render search bar -->
+  {% endif %}
 
-{% javascript %}
-{% endjavascript %}
+  <div class="faq-columns-{{ section.settings.num_columns }}">
+    {% for faq in faq_items %}
+      <div class="faq-item">
+        <h3>{{ faq.question }}</h3>
+        <p>{{ faq.answer }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</div>
