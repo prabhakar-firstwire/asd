@@ -147,6 +147,32 @@
     column-count: 2;
     column-gap: 60px;
   }
+  <style>
+  /* ... (previously defined styles) ... */
+
+  .faq-question {
+    position: relative;
+    padding: 15px 45px 15px 15px; /* Adjust padding to accommodate the icon */
+    background-color: #fff;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.3s ease;
+  }
+
+  .faq-question::after {
+    content: "\f067"; /* Unicode for plus icon */
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+  }
+
+  .faq-question.active::after {
+    content: "\f068"; /* Unicode for minus icon */
+  }
+
+  /* ... (previously defined styles) ... */
 </style>
 
 
